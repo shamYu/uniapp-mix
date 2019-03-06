@@ -126,7 +126,7 @@
 		},
 		mounted() {
 			let initValue = this.type == 'time' ? '1970-0-0 ' + this.init : this.init;
-			let date = new Date(initValue.replace(/^(\d{4})-(\d{1,2})-(\d{1,2})$/, "$1/$2/$3")); //转换 年-月-日 =>年/月/日
+			let date = new Date(); //转换 年-月-日 =>年/月/日
 			this.date.year = date.getFullYear();
 			this.date.month = date.getMonth() + 1;
 			this.date.date = date.getDate();
@@ -161,19 +161,20 @@
 				if (this.type == 'yyyy') {
 					date.value = date.year;
 				} else if (this.type == 'yyyy-MM') {
-					date.value = date.year + '-' + date.month;
+					date.value = date.year + '-' + this.handleDate(date.month);
 				} else if (this.type == 'yyyy-MM-dd') {
-					date.value = date.year + '-' + date.month + '-' + date.date;
+					date.value = date.year + '-' + this.handleDate(date.month) + '-' + this.handleDate(date.date);
 				} else if (this.type == 'yyyy-MM-dd HH') {
-					date.value = date.year + '-' + date.month + '-' + date.date + ' ' + date.hour;
+					date.value = date.year + '-' + this.handleDate(date.month) + '-' + this.handleDate(date.date) + ' ' + this.handleDate(date.hour);
 				} else if (this.type == 'yyyy-MM-dd HH:mm') {
-					date.value = date.year + '-' + date.month + '-' + date.date + ' ' + date.hour + ':' + date.minute
+					date.value = date.year + '-' + this.handleDate(date.month) + '-' + this.handleDate(date.date) + ' ' + this.handleDate(date.hour) + ':' + this.handleDate(date.minute)
 				} else if (this.type == 'yyyy-MM-dd HH:mm:ss') {
-					date.value = date.year + '-' + date.month + '-' + date.date + ' ' + date.hour + ':' + date.minute + ':' + date.second;
+					date.value = date.year + '-' + this.handleDate(date.month) + '-' + this.handleDate(date.date) + ' ' + this.handleDate(date.hour) + ':' + this.handleDate(date.minute) + ':' + this.handleDate(date.second);
 				} else {
-					date.value = date.hour + ':' + date.minute + ':' + date.second;
+					date.value = this.handleDate(date.hour) + ':' + this.handleDate(date.minute) + ':' + this.handleDate(date.second);
 				}
 				this.onClose();
+				console.log(date)
 				this.$emit('selected', date);
 			},
 			//时间变更
@@ -276,6 +277,10 @@
 					arr.push(i)
 				}
 				return arr
+			},
+			handleDate(dateNum){
+				if(dateNum < 10) return '0' + dateNum;
+				return dateNum;
 			}
 		},
 		watch: {
