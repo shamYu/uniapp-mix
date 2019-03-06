@@ -1,0 +1,20 @@
+{
+  "name": "platform-module-mixapp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://gitlab.powerdata.com.cn/platform/platform-module-mixapp.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "amap-wx": "0.0.2",
+    "vue-amap": "^0.5.8"
+  }
+}

@@ -1,0 +1,113 @@
+.dg-view{
+	background-color: #fff;
+}
+.table-list-ctn ul>li{
+	width: 100%;
+	height: 80upx;
+	line-height: 80upx;
+	color: #8e8e8e;
+	font-size: 30upx;
+	border-bottom: 2upx solid #bbd4eb;
+}
+.span-hd{
+	display: block;
+	float: left;
+	width: 30%;
+	height: 100%;
+	color: #8198b2;
+	text-align: right;
+	background: #f2f8ff;
+	border-right: 2upx solid #bbd4eb;
+}
+.span-value{
+	display: block;
+	float: left;
+	width: 68%;
+	height: 100%;
+}
+.span-hd{
+		width:30%;
+	}
+   .span-value{
+		width:70%;
+	}
+	.span-hd,.span-value{
+		box-sizing: border-box;
+	}
+	.table-list-ctn ul>li.list-item-textarea{
+		height:150upx;
+		line-height: 150upx;
+		
+	}
+	.list-item-textarea .uni-textarea{
+			padding-left:14upx;
+			height:100%;
+			box-sizing: border-box;
+		}
+.starred{color: red;}
+/* .table-list-ctn{
+	border-collapse: collapse;
+    width: 100%;
+    background: #fff;
+    box-shadow: 2upx 2upx 10upx #ccc;
+}
+.table-list-ctn tr td {
+    color: #8e8e8e;
+    font-size: 30upx;
+    padding: 8upx;
+    border-right: 2upx solid #bbd4eb;
+    border-bottom: 2upx solid #bbd4eb;
+    line-height: 60upx;
+    height: 60upx;
+}
+
+.table-list-ctn tr td:nth-of-type(2n) {
+    border-right: none;
+}
+.table-list-ctn tr td.td-hd {
+    color: #8198b2;
+    text-align: right;
+    padding: 10upx 0;
+    background: #f2f8ff;
+    position: relative;
+} */
+
+/* 自定义公共导航 */
+.uni-list{
+	position: absolute;
+	top:130upx;
+	background: none;
+}
+.icon_search,.icon_add{
+	display: inline-block;
+	width: 34upx;
+	height: 34upx;
+	margin-left: 20upx;
+}
+.btn_list{
+	position: absolute;
+    z-index: 100;
+    color: #fff;
+    top: 30%;
+    right: 26upx;
+    font-size: 34upx;
+}
+
+/* 搜索 */
+.searchView{
+	width: 100%;
+	height:86upx;
+	border-bottom: 1px solid #ddd;
+	background:#fff;
+}
+.searchView input{
+	width: 95%;
+	border-radius: 24upx;
+	background: #eef0f2 url(~@/static/powerapp/index/icon/search1.png) 20upx center no-repeat;
+	background-size: 30upx 30upx;
+	margin: 0 auto;
+	text-align: center;
+	height: 56upx;
+	margin-top: 15upx;
+	font-size: 30upx;
+}

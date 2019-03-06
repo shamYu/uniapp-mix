@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>地图点位示例1</title>
+		<link href="../css/reset.css" rel="stylesheet">
+		<link href="../css/map.css" rel="stylesheet">
+	</head>
+	<body>
+		<div class="map-icon-box">
+			<img src="../image/index/business_wry.png" data-type='wry' class="icon">
+			<img src="../image/index/business_tr.png" data-type="tr" class="icon">
+		</div>
+		<div id='map_container' class='map-container'>正在加载...</div>
+<!-- 		<p class="desc">web-view 组件加载本地 html 示例，仅在 App 环境下生效。点击下列按钮，跳转至其它页面。</p>
+		<div class="btn-list">
+			<button class="btn" type="button" data-action="navigateTo">navigateTo</button>
+			<button class="btn" type="button" data-action="redirectTo">redirectTo</button>
+			<button class="btn" type="button" data-action="navigateBack">navigateBack</button>
+			<button class="btn" type="button" data-action="reLaunch">reLaunch</button>
+			<button class="btn" type="button" data-action="switchTab">switchTab</button>
+		</div>
+		<p class="desc">网页向应用发送消息，应用会在此页面后退时接收到消息。</p>
+		<div class="btn-list">
+			<button class="btn btn-red" type="button" id="postMessage">postMessage</button>
+		</div> -->
+		<!-- uni 的 SDK -->
+		<script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.0.js"></script>
+		<!-- 高德地图 -->
+		<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.6&key=b698e8fc43715a16053e9fa156601706&plugin=AMap.MarkerClusterer"></script>
+		<script src='../plugins/pd.common.js'></script>
+		<script src='../plugins/pd.map.js'></script>
+		<script src='../js/mpe.js'></script>
+		<script type="text/javascript">
+			function customSend(){
+				// 定位
+				mapPointEmp.methods.dw();
+			}
+			document.addEventListener('UniAppJSBridgeReady', function() {
+				pdHtml.saveFireSub();
+				var map = mapPointEmp.mounted();
+				//加载数据
+				var type = 'wry';
+				mapPointEmp.methods.renderMapByData(type);
+				document.querySelector('.map-icon-box').addEventListener('click', function(evt) {
+					var target = evt.target;
+					if(target.tagName == 'IMG'){
+						type = target.getAttribute('data-type');
+						mapPointEmp.methods.renderMapByData(type);
+					}
+				});
+				//定位
+// 				if(location.search){
+// 					var isDw = pdValue.stringToObj(location.search).dw;
+// 					if(isDw){
+// 						mapPointEmp.methods.dw();
+// 					}
+// 				}
+// 				document.querySelector('.btn-list').addEventListener('click', function(evt) {
+// 					var target = evt.target;
+// 					if (target.tagName === 'BUTTON') {
+// 						var action = target.getAttribute('data-action');
+// 						switch (action) {
+// 							case 'switchTab':
+// 								uni.switchTab({
+// 									url: '/pages/tabBar/API/API'
+// 								});
+// 								break;
+// 							case 'reLaunch':
+// 								uni.reLaunch({
+// 									url: '/pages/tabBar/API/API'
+// 								});
+// 								break;
+// 							case 'navigateBack':
+// 								uni.navigateBack({
+// 									delta: 1
+// 								});
+// 								break;
+// 							default:
+// 								uni[action]({
+// 									url: '/pages/component/button/button'
+// 								});
+// 								break;
+// 						}
+// 					}
+// 				});
+// 				document.querySelector("#postMessage").addEventListener('click', function() {
+// 					uni.postMessage({
+// 						data: {
+// 							action: 'message'
+// 						}
+// 					});
+// 				})
+			});
+		</script>
+	</body>
+</html>

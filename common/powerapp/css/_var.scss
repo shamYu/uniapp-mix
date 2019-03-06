@@ -1,0 +1,62 @@
+/* css公用变量【字体大小颜色，主色调，常用变量】
+* @author 李凤
+* @date 20190115
+*/
+$nav-bar-height:88px;
+
+$pd-font-size-smaller:24upx;
+$pd-font-size-small: 26upx;
+$pd-font-size: 28upx;
+$pd-font-size-middle: 30upx;
+$pd-font-size-big: 32upx;
+$pd-font-size-bigger: 36upx;
+
+$pd-color:#000;
+$pd-color-two:#666;
+
+$pd-color-primary: #17bdcc; // 主题色
+$pd-color-success: #4cd964;
+$pd-color-error:#dd524d;
+$pd-color-warning: #f0ad4e;
+
+$pd-color-placeholder: #808080;
+$pd-color-gray: #ccc;
+
+$pd-color-disable:#c0c0c0;
+// 边框颜色
+$pd-border-color:#ddd;
+// placeholder色
+$pd-placeholder-color:#acacac;
+// 背景色
+$pd-bg: #fff;
+$pd-bg-gray: #f8f8f8;
+$pd-bg-mask:rgba(0,0,0,.1);
+
+// btn的高度
+$pd-btn: 60upx;
+$pd-btn: 60upx;
+
+// margin,padding
+$pd-spacing-row-sm: 10px;
+$pd-spacing-row: 20upx;
+$pd-spacing-row-lg: 30upx;
+
+/* 垂直间距 */
+$pd-spacing-col-sm: 8upx;
+$pd-spacing-col: 16upx;
+$pd-spacing-col-lg: 24upx;
+
+/* Border Radius */
+$pd-radius-sm: 4upx;
+$pd-radius: 6upx;
+$pd-radius-lg: 12upx;
+$pd-radius-circle: 50%;
+
+/* 文章场景相关 */
+$pd-color-title: #2C405A; // 文章标题颜色
+$pd-font-size-title:40upx;
+$pd-color-subtitle: #555555; // 二级标题颜色
+$pd-font-size-subtitle:36upx;
+$pd-color-paragraph: #3F536E; // 文章段落颜色
+$pd-font-size-paragraph:30upx;
+

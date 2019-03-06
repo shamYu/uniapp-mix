@@ -1,0 +1,110 @@
+/* css公用布局相关样式
+* @author 李凤
+* @date 20190115
+*/
+.overflow-hidden{
+	overflow: hidden !important;
+}
+.uni-page{
+	position:relative;
+	@include width-height;
+	box-sizing: border-box;
+	background-color:#fff;
+	&.bg{
+		background-color: $pd-bg-gray;
+	}
+	overflow-y:auto;
+}
+.uni-flex {
+	display: flex;
+	flex-direction: row;
+}
+.uni-flex-column{
+	display:flex;
+	flex-direction: column;
+}
+.uni-flex-center{
+	display:flex;
+	align-items: center;
+	justify-content: center;
+}
+/* page */
+.uni-page-head{
+	padding:35upx; 
+	text-align: center;
+}
+.uni-page-head-title {
+	display: inline-block;
+	padding: 0 40upx;
+	font-size: 30upx;
+	height: 88upx;
+	line-height: 88upx;
+	color: #BEBEBE;
+	box-sizing: border-box;
+	border-bottom: 2upx solid #D8D8D8;
+}
+.uni-page-body {
+	width: 100%;
+	flex-grow: 1;
+	overflow-x: hidden;
+}
+.uni-padding-wrap{
+	width:690upx;
+	padding:0 30upx;
+}
+.uni-flex-item {
+	flex: 1;
+}
+.uni-row {
+	flex-direction: row;
+}
+.uni-column {
+	flex-direction: column;
+}
+.uni-center{
+	text-align:center;
+}
+.uni-inline-item{
+	display: flex;
+	flex-direction: row;
+	align-items:center;
+}
+.uni-common-mb{
+	margin-bottom:30upx;
+}
+.uni-common-pb{
+	padding-bottom:30upx;
+}
+.uni-common-pl{
+	padding-left:30upx;
+}
+.uni-common-mt{
+	margin-top:30upx;
+}
+.uni-list-item{
+	background-color:#fff;
+	dispay:flex;
+	padding:10upx;
+	&+&{
+		margin-top:10upx;
+	}
+}
+// 顶部导航栏占位
+.pos-nav,.pos-nav-app{
+	width:100%;
+	height:auto;
+	display:block;
+	background: transparent;
+	line-height: 1;
+}
+.pos-nav{
+	
+}
+.pos-nav-app{
+	/* #ifdef APP-PLUS */
+		height:calc(var(--status-bar-height) + 88px);
+	/* #endif */
+	/* #ifdef H5 */
+	height:$nav-bar-height;
+	/* #endif */
+}

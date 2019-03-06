@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>地图搜索示例</title>
+		<link href="../css/reset.css" rel="stylesheet">
+		<link href="../css/map.css" rel="stylesheet">
+	</head>
+	<body>
+		<input type='search' :value="searchStr" id="search" class="map-input" placeholder="请输入搜索地点...如:咖啡">
+		<div id='panel_result' class="panel-result"></div>
+		<div id="map_container" class='map-container'>正在加载...</div>
+		<!-- uni 的 SDK -->
+		<script type="text/javascript" src="https://js.cdn.aliyun.dcloud.net.cn/dev/uni-app/uni.webview.1.5.0.js"></script>
+		<!-- 高德地图 -->
+		<script type="text/javascript" src="https://webapi.amap.com/maps?v=1.4.6&key=b698e8fc43715a16053e9fa156601706&plugin=AMap.MarkerClusterer"></script>
+		<script src='../plugins/pd.common.js'></script>
+		<script src='../plugins/pd.map.js'></script>
+		<script src='../js/mse.js'></script>
+		<script type="text/javascript">
+			function customSend(){
+				// 定位
+			}
+			document.addEventListener('UniAppJSBridgeReady', function() {
+				var map = mapSearchEmp.mounted();
+				
+				document.querySelector('#search').addEventListener('keyup', function(evt) {
+					var evt = evt||window.event;
+					var code = evt.which||evt.keyCode||evt.charCode;
+					console.log(code);
+					var target = evt.target;
+					if(target.tagName == 'INPUT'){
+						console.log(target.value)
+						mapSearchEmp.methods.search(target.value)
+					}
+				});
+
+// 				document.querySelector('.btn-list').addEventListener('click', function(evt) {
+// 					var target = evt.target;
+// 					if (target.tagName === 'BUTTON') {
+// 						var action = target.getAttribute('data-action');
+// 						switch (action) {
+// 							case 'switchTab':
+// 								uni.switchTab({
+// 									url: '/pages/tabBar/API/API'
+// 								});
+// 								break;
+// 							case 'reLaunch':
+// 								uni.reLaunch({
+// 									url: '/pages/tabBar/API/API'
+// 								});
+// 								break;
+// 							case 'navigateBack':
+// 								uni.navigateBack({
+// 									delta: 1
+// 								});
+// 								break;
+// 							default:
+// 								uni[action]({
+// 									url: '/pages/component/button/button'
+// 								});
+// 								break;
+// 						}
+// 					}
+// 				});
+// 				document.querySelector("#postMessage").addEventListener('click', function() {
+// 					uni.postMessage({
+// 						data: {
+// 							action: 'message'
+// 						}
+// 					});
+// 				})
+			});
+		</script>
+	</body>
+</html>

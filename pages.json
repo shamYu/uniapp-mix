@@ -1,0 +1,1423 @@
+{
+	"pages": [
+// 		{
+// 			"path": "powerapp/pages/temp",
+// 			"style": {
+// 				"navigationBarTitleText": "模板页"
+// 			}
+// 		},
+		//新增路由--------------------------------start
+		// 		//pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "powerapp/pages/login/login",
+			"style": {
+				"navigationBarTitleText": "登录",
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "none"
+				}
+			}
+		},
+		{
+			"path": "powerapp/pages/login/guide",
+			"style": {
+				"navigationStyle": "custom",
+				// "enablePullDownRefresh":true, // 下拉刷新页面都要加上
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "powerapp/pages/login/bmdApply",
+			"style": {
+				"navigationBarTitleText": "白名单申请"
+			}
+		},
+		{
+			"path": "powerapp/pages/tabBar/index/index",
+			"style": {
+				"navigationBarTitleText": "首页"
+			}
+		},
+{
+			"path": "powerapp/pages/tabBar/contact/main",
+			"style": {
+				"navigationBarTitleText": "通讯录",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false,
+					"bounce": "none",
+					"scrollIndicator": "none",
+					"pullToRefresh": {
+						"style": "circle",
+						"offset": "70px",
+						"color": "#007AFF"
+					}
+				}
+			}
+		},
+		{
+			"path": "powerapp/pages/tabBar/contact/phone-search",
+			"style": {
+				"navigationBarTitleText": "搜索联系人"
+			}
+		} , {
+			"path": "powerapp/pages/tabBar/contact/contactInfo",
+			"style": {
+				"navigationBarTitleText": "联系人详情"
+			}
+		},{
+			"path": "powerapp/pages/tabBar/user/user",
+			"style": {
+				"navigationBarTitleText": "我的",
+				"navigationStyle": "custom",
+				"app-plus": {
+					"titleNView": false
+				}
+			}
+		},
+		{
+			"path": "pages/tabBar/API/index",
+			"style": {
+				"navigationBarTitleText": "示例",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#999999"
+						}]
+					}
+				}
+			}
+		},
+		// pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+		{
+			"path": "pages/tabBar/API/component",
+			"style": {
+				"navigationBarTitleText": "组件",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#999999"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/tabBar/API/API",
+			"style": {
+				"navigationBarTitleText": "接口",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#999999"
+						}]
+					}
+				}
+			}
+		},
+		{
+			"path": "pages/tabBar/API/template",
+			"style": {
+				"navigationBarTitleText": "模版",
+				"app-plus": {
+					"titleNView": {
+						"buttons": [{
+							"text": "\ue534",
+							"fontSrc": "/static/uni.ttf",
+							"fontSize": "22px",
+							"color": "#999999"
+						}]
+					}
+				}
+			}
+		},
+		// 新增路由以及修改路由--------------------------------end
+		{
+			"path": "pages/component/view/view",
+			"style": {
+				"navigationBarTitleText": "view"
+			}
+		},
+		{
+			"path": "pages/component/scroll-view/scroll-view",
+			"style": {
+				"navigationBarTitleText": "scroll-view"
+			}
+		},
+		{
+			"path": "pages/component/swiper/swiper",
+			"style": {
+				"navigationBarTitleText": "swiper"
+			}
+		},
+		{
+			"path": "pages/component/movable-view/movable-view",
+			"style": {
+				"navigationBarTitleText": "movable-view"
+			}
+		},
+		{
+			"path": "pages/component/text/text",
+			"style": {
+				"navigationBarTitleText": "text"
+			}
+		},
+		{
+			"path": "pages/component/rich-text/rich-text",
+			"style": {
+				"navigationBarTitleText": "rich-text"
+			}
+		},
+		{
+			"path": "pages/component/progress/progress",
+			"style": {
+				"navigationBarTitleText": "progress"
+			}
+		},
+		{
+			"path": "pages/component/button/button",
+			"style": {
+				"navigationBarTitleText": "button"
+			}
+		},
+		{
+			"path": "pages/component/checkbox/checkbox",
+			"style": {
+				"navigationBarTitleText": "checkbox"
+			}
+		},
+		{
+			"path": "pages/component/form/form",
+			"style": {
+				"navigationBarTitleText": "form"
+			}
+		},
+		{
+			"path": "pages/component/input/input",
+			"style": {
+				"navigationBarTitleText": "input"
+			}
+		},
+		{
+			"path": "pages/component/label/label",
+			"style": {
+				"navigationBarTitleText": "label"
+			}
+		},
+		{
+			"path": "pages/component/picker/picker",
+			"style": {
+				"navigationBarTitleText": "picker"
+			}
+		},
+		{
+			"path": "pages/component/picker-view/picker-view",
+			"style": {
+				"navigationBarTitleText": "picker-view"
+			}
+		},
+		{
+			"path": "pages/component/radio/radio",
+			"style": {
+				"navigationBarTitleText": "radio"
+			}
+		},
+		{
+			"path": "pages/component/slider/slider",
+			"style": {
+				"navigationBarTitleText": "slider"
+			}
+		},
+		{
+			"path": "pages/component/switch/switch",
+			"style": {
+				"navigationBarTitleText": "switch"
+			}
+		},
+		{
+			"path": "pages/component/textarea/textarea",
+			"style": {
+				"navigationBarTitleText": "textarea"
+			}
+		},
+		{
+			"path": "pages/component/navigator/navigator",
+			"style": {
+				"navigationBarTitleText": "navigator"
+			}
+		},
+		{
+			"path": "pages/component/navigator/navigate/navigate",
+			"style": {
+				"navigationBarTitleText": "navigatePage"
+			}
+		},
+		{
+			"path": "pages/component/navigator/redirect/redirect",
+			"style": {
+				"navigationBarTitleText": "redirectPage"
+			}
+		},
+		{
+			"path": "pages/component/image/image",
+			"style": {
+				"navigationBarTitleText": "image"
+			}
+		},
+		// #ifndef MP-ALIPAY
+		{
+			"path": "pages/component/audio/audio",
+			"style": {
+				"navigationBarTitleText": "audio"
+			}
+		},
+		{
+			"path": "pages/component/video/video",
+			"style": {
+				"navigationBarTitleText": "video"
+			}
+		},
+		{
+			"path": "pages/component/sign/sign",
+			"style": {
+				"navigationBarTitleText": "sign"
+			}
+		},
+		// #endif
+		{
+			"path": "pages/component/map/map",
+			"style": {
+				"navigationBarTitleText": "map"
+			}
+		},
+		{
+			"path": "pages/component/canvas/canvas",
+			"style": {
+				"navigationBarTitleText": "canvas"
+			}
+		},
+		{
+			"path": "pages/component/web-view/web-view",
+			"style": {
+				"navigationBarTitleText": "web-view"
+			}
+		},
+		{
+			"path": "pages/API/login/login",
+			"style": {
+				"navigationBarTitleText": "授权登录"
+			}
+		},
+		{
+			"path": "pages/API/get-user-info/get-user-info",
+			"style": {
+				"navigationBarTitleText": "获取用户信息"
+			}
+		},
+		{
+			"path": "pages/API/request-payment/request-payment",
+			"style": {
+				"navigationBarTitleText": "发起支付"
+			}
+		},
+		{
+			"path": "pages/API/share/share",
+			"style": {
+				"navigationBarTitleText": "分享"
+			}
+		},
+		{
+			"path": "platforms/mp-weixin/custom-message/custom-message",
+			"style": {
+				"navigationBarTitleText": "客服消息"
+			}
+		},
+		{
+			"path": "platforms/mp-weixin/template-message/template-message",
+			"style": {
+				"navigationBarTitleText": "模板消息"
+			}
+		},
+		{
+			"path": "pages/API/set-navigation-bar-title/set-navigation-bar-title",
+			"style": {
+				"navigationBarTitleText": "设置界面标题"
+			}
+		},
+		{
+			"path": "pages/API/show-loading/show-loading",
+			"style": {
+				"navigationBarTitleText": "加载提示框"
+			}
+		},
+		{
+			"path": "pages/API/navigator/navigator",
+			"style": {
+				"navigationBarTitleText": "页面跳转"
+			}
+		},
+		{
+			"path": "pages/API/navigator/new-page/new-page",
+			"style": {
+				"navigationBarTitleText": "新页面"
+			}
+		},
+		{
+			"path": "pages/API/pull-down-refresh/pull-down-refresh",
+			"style": {
+				"navigationBarTitleText": "下拉刷新",
+				"enablePullDownRefresh": true
+			}
+		},
+		// #ifndef H5
+		{
+			"path": "pages/API/animation/animation",
+			"style": {
+				"navigationBarTitleText": "创建动画"
+			}
+		},
+		// #endif
+		{
+			"path": "pages/API/canvas/canvas",
+			"style": {
+				"navigationBarTitleText": "创建绘画"
+			}
+		},
+		{
+			"path": "pages/API/action-sheet/action-sheet",
+			"style": {
+				"navigationBarTitleText": "操作菜单"
+			}
+		},
+		{
+			"path": "pages/API/modal/modal",
+			"style": {
+				"navigationBarTitleText": "模态弹窗"
+			}
+		},
+		{
+			"path": "pages/API/toast/toast",
+			"style": {
+				"navigationBarTitleText": "消息提示框"
+			}
+		},
+		{
+			"path": "pages/API/get-network-type/get-network-type",
+			"style": {
+				"navigationBarTitleText": "获取手机网络状态"
+			}
+		},
+		{
+			"path": "pages/API/get-system-info/get-system-info",
+			"style": {
+				"navigationBarTitleText": "获取手机系统信息"
+			}
+		},
+		{
+			"path": "pages/API/on-accelerometer-change/on-accelerometer-change",
+			"style": {
+				"navigationBarTitleText": "监听加速度计数据"
+			}
+		},
+		{
+			"path": "platforms/app-plus/shake/shake",
+			"style": {
+				"navigationBarTitleText": "摇一摇"
+			}
+		},
+		{
+			"path": "pages/API/on-compass-change/on-compass-change",
+			"style": {
+				"navigationBarTitleText": "监听罗盘数据"
+			}
+		},
+		{
+			"path": "pages/API/make-phone-call/make-phone-call",
+			"style": {
+				"navigationBarTitleText": "打电话"
+			}
+		},
+		{
+			"path": "pages/API/scan-code/scan-code",
+			"style": {
+				"navigationBarTitleText": "扫码"
+			}
+		},
+		{
+			"path": "pages/API/clipboard/clipboard",
+			"style": {
+				"navigationBarTitleText": "剪贴板"
+			}
+		},
+		{
+			"path": "pages/API/request/request",
+			"style": {
+				"navigationBarTitleText": "网络请求"
+			}
+		},
+		{
+			"path": "pages/API/upload-file/upload-file",
+			"style": {
+				"navigationBarTitleText": "上传文件"
+			}
+		},
+		{
+			"path": "pages/API/download-file/download-file",
+			"style": {
+				"navigationBarTitleText": "下载文件"
+			}
+		},
+		{
+			"path": "pages/API/image/image",
+			"style": {
+				"navigationBarTitleText": "图片"
+			}
+		},
+		{
+			"path": "pages/API/voice/voice",
+			"style": {
+				"navigationBarTitleText": "录音"
+			}
+		},
+		{
+			"path": "pages/API/background-audio/background-audio",
+			"style": {
+				"navigationBarTitleText": "背景音频"
+			}
+		},
+		{
+			"path": "pages/API/video/video",
+			"style": {
+				"navigationBarTitleText": "视频"
+			}
+		},
+		{
+			"path": "pages/API/file/file",
+			"style": {
+				"navigationBarTitleText": "文件"
+			}
+		},
+		{
+			"path": "pages/API/get-location/get-location",
+			"style": {
+				"navigationBarTitleText": "获取位置"
+			}
+		},
+		{
+			"path": "pages/API/open-location/open-location",
+			"style": {
+				"navigationBarTitleText": "查看位置"
+			}
+		},
+		{
+			"path": "pages/API/choose-location/choose-location",
+			"style": {
+				"navigationBarTitleText": "使用地图选择位置"
+			}
+		},
+		{
+			"path": "pages/API/storage/storage",
+			"style": {
+				"navigationBarTitleText": "数据存储"
+			}
+		},
+		{
+			"path": "platforms/app-plus/speech/speech",
+			"style": {
+				"navigationBarTitleText": "语音识别"
+			}
+		},
+		{
+			"path": "platforms/app-plus/orientation/orientation",
+			"style": {
+				"navigationBarTitleText": "方向传感器"
+			}
+		},
+		{
+			"path": "platforms/app-plus/proximity/proximity",
+			"style": {
+				"navigationBarTitleText": "距离传感器"
+			}
+		},
+		{
+			"path": "platforms/app-plus/push/push",
+			"style": {
+				"navigationBarTitleText": "推送"
+			}
+		},
+		{
+			"path": "pages/component/icon/icon",
+			"style": {
+				"navigationBarTitleText": "icon"
+			}
+		},
+		{
+			"path": "platforms/app-plus/feedback/feedback",
+			"style": {
+				"navigationBarTitleText": "问题反馈"
+			}
+		},
+		{
+			"path": "platforms/app-plus/about/about",
+			"style": {
+				"navigationBarTitleText": "关于"
+			}
+		},
+		{
+			"path": "platforms/h5/about/about",
+			"style": {
+				"navigationBarTitleText": "关于"
+			}
+		},
+		{
+			"path": "platforms/app-plus/tabbar/tabbar",
+			"style": {
+				"navigationBarTitleText": "可拖动顶部选项卡（非原生）"
+			}
+		},
+		{
+			"path": "platforms/app-plus/web-view-local/web-view-local",
+			"style": {}
+		}
+	],
+	"subPackages": [{
+			"root": "pages/template",
+			"pages": [{
+					"path": "number-box/number-box",
+					"style": {
+						"navigationBarTitleText": "数字输入框"
+					}
+				},
+				{
+					"path": "product-list/product-list",
+					"style": {
+						"navigationBarTitleText": "商品列表",
+						"enablePullDownRefresh": true,
+						"onReachBottomDistance": 20
+					}
+				},
+				// #ifdef APP-PLUS || MP-WEIXIN || H5
+				{
+					"path": "mdparse/mdparse",
+					"style": {
+						"navigationBarTitleText": "markdown富文本渲染"
+					}
+				},
+				{
+					"path": "md-editor/md-editor",
+					"style": {
+						"navigationBarTitleText": "md富文本编辑器"
+					}
+				},
+				// #endif
+				{
+					"path": "qrcode/qrcode",
+					"style": {
+						"navigationBarTitleText": "二维码生成"
+					}
+				},
+				{
+					"path": "crop/crop",
+					"style": {
+						"navigationBarTitleText": "图片裁剪"
+					}
+				},
+				// #ifndef MP-ALIPAY
+				{
+					"path": "echarts/echarts",
+					"style": {
+						"navigationBarTitleText": "ECharts图表"
+					}
+				},
+				// #endif
+				// #ifdef APP-PLUS || H5 || MP-WEIXIN
+				{
+					"path": "gesture-lock/gesture-lock",
+					"style": {
+						"navigationBarTitleText": "手势图案锁屏"
+					}
+				},
+				// #endif
+				{
+					"path": "nav-default/nav-default",
+					"style": {
+						"navigationBarTitleText": "默认导航栏"
+					}
+				},
+				// #ifdef APP-PLUS || H5
+				{
+					"path": "nav-transparent/nav-transparent",
+					"style": {
+						"navigationBarTitleText": "透明渐变导航栏",
+						"app-plus": {
+							"titleNView": {
+								"type": "transparent"
+							}
+						}
+					}
+				},
+				{
+					"path": "nav-button/nav-button",
+					"style": {
+						"navigationBarTitleText": "导航栏带自定义按钮",
+						"app-plus": {
+							"titleNView": {
+								"buttons": [{
+										"type": "share"
+									},
+									{
+										"type": "favorite"
+									}
+								]
+							}
+						}
+					}
+				},
+				// #endif
+				{
+					"path": "mpvue-picker/mpvue-picker",
+					"style": {
+						"navigationBarTitleText": "多列选择picker"
+					}
+				},
+				{
+					"path": "drawer/drawer",
+					"style": {
+						"navigationBarTitleText": "抽屉侧滑菜单drawer",
+						"app-plus": {
+							"titleNView": {
+								"buttons": [{
+									"text": "\ue563",
+									"fontSrc": "/static/uni.ttf",
+									"fontSize": "22px"
+								}]
+							},
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "load-more/load-more",
+					"style": {
+						"navigationBarTitleText": "加载更多"
+					}
+				},
+				{
+					"path": "left-category/left-category",
+					"style": {
+						"navigationBarTitleText": "侧边分类导航"
+					}
+				},
+				{
+					"path": "segmented-control/segmented-control",
+					"style": {
+						"navigationBarTitleText": "分段器segement",
+						"app-plus": {
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "list-with-collapses/list-with-collapses",
+					"style": {
+						"navigationBarTitleText": "二级列表"
+					}
+				},
+				{
+					"path": "list-triplex-row/list-triplex-row",
+					"style": {
+						"navigationBarTitleText": "三行列表"
+					}
+				},
+				{
+					"path": "list2detail-list/list2detail-list",
+					"style": {
+						"navigationBarTitleText": "列表到详情示例",
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "list2detail-detail/list2detail-detail",
+					"style": {
+						"navigationBarTitleText": "详情",
+						"app-plus": {
+							"titleNView": {
+								"type": "transparent"
+							}
+						}
+					}
+				},
+				{
+					"path": "popup/popup",
+					"style": {
+						"navigationBarTitleText": "popup",
+						"app-plus": {
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "tabbar/tabbar",
+					"style": {
+						"navigationBarTitleText": "可拖动顶部选项卡",
+						"app-plus": {
+							"titleNView": {
+								"titleText": "可拖动顶部选项卡（原生）"
+							}
+						},
+						"h5": {
+							"titleNView": {
+								"titleText": "可拖动顶部选项卡"
+							}
+						}
+					}
+				},
+				{
+					"path": "tabbar/detail/detail",
+					"style": {
+						"navigationBarTitleText": "详情页面"
+					}
+				},
+				{
+					"path": "media-list/media-list",
+					"style": {
+						"navigationBarTitleText": "图文列表"
+					}
+				},
+				{
+					"path": "index-list/index-list",
+					"style": {
+						"navigationBarTitleText": "索引列表index-list",
+						"mp-weixin": {
+							"disableScroll": true
+						},
+						"app-plus": {
+							"bounce": "none"
+						}
+					}
+				},
+				{
+					"path": "grid/grid",
+					"style": {
+						"navigationBarTitleText": "九宫格"
+					}
+				},
+				{
+					"path": "grid-pagination/grid-pagination",
+					"style": {
+						"navigationBarTitleText": "左右拖动分页9宫格"
+					}
+				},
+				{
+					"path": "badge/badge",
+					"style": {
+						"navigationBarTitleText": "数字角标"
+					}
+				},
+				{
+					"path": "accordion/accordion",
+					"style": {
+						"navigationBarTitleText": "折叠面板"
+					}
+				},
+				{
+					"path": "cardview/cardview",
+					"style": {
+						"navigationBarTitleText": "卡片视图"
+					}
+				},
+				{
+					"path": "list-with-badges/list-with-badges",
+					"style": {
+						"navigationBarTitleText": "右侧带角标"
+					}
+				},
+				{
+					"path": "lazy-load/lazy-load",
+					"style": {
+						"navigationBarTitleText": "懒加载"
+					}
+				},
+				{
+					"path": "lazy-load-custom/lazy-load-custom",
+					"style": {
+						"navigationBarTitleText": "懒加载"
+					}
+				},
+				{
+					"path": "im-chat/im-chat",
+					"style": {
+						"navigationBarTitleText": "聊天窗口chat"
+					}
+				},
+				{
+					"path": "nav-bar/nav-bar",
+					"style": {
+						"navigationBarTitleText": "导航栏组件",
+						"enablePullDownRefresh": true,
+						"app-plus": {
+							"titleNView": false,
+							"bounce": "none",
+							"scrollIndicator": "none",
+							"pullToRefresh": {
+								"style": "circle",
+								"offset": "70px",
+								"color": "#007AFF"
+							}
+						}
+					}
+				},
+				{
+					"path": "scrollmsg/scrollmsg",
+					"style": {
+						"navigationBarTitleText": "滚动公告"
+					}
+				},
+				{
+					"path": "steps/steps",
+					"style": {
+						"navigationBarTitleText": "步骤展示"
+					}
+				},
+				{
+					"path": "comments/comments",
+					"style": {
+						"navigationBarTitleText": "评论界面"
+					}
+				},
+				{
+					"path": "timeline/timeline",
+					"style": {
+						"navigationBarTitleText": "时间轴 timeline"
+					}
+				},
+				{
+					"path": "tag/tag",
+					"style": {
+						"navigationBarTitleText": "标签tag"
+					}
+				},
+				{
+					"path": "countdown/countdown",
+					"style": {
+						"navigationBarTitleText": "倒计时"
+					}
+				},
+				{
+					"path": "datachecker/datachecker",
+					"style": {
+						"navigationBarTitleText": "表单校验"
+					}
+				},
+				{
+					"path": "sbanner/sbanner",
+					"style": {
+						"navigationBarTitleText": "插屏弹窗",
+						"app-plus": {
+							"bounce": "none"
+						}
+					}
+				}
+			]
+		},
+		// 新增路由2--------------------------------start
+		{
+			"root": "powerapp/pages/user", //"我的"页面路由
+			"pages": [{
+					"path": "personInform/personInform",
+					"style": {
+						"navigationBarTitleText": "个人信息"
+					}
+				},
+				{
+					"path": "changePassword/changePassword",
+					"style": {
+						"navigationBarTitleText": "修改密码",
+						"titleNView": {
+							"buttons":[
+								{
+									"text":"保存",
+									"fontSize":"20",
+									"width":"auto"
+								}
+							]
+						}
+					}
+				},
+				{
+					"path": "setting/setting",
+					"style": {
+						"navigationBarTitleText": "设置"
+					}
+				},
+				{
+					"path": "abute/abute",
+					"style": {
+						"navigationBarTitleText": "关于"
+					}
+				},
+				{
+					"path": "setting/serverSeting",
+					"style": {
+						"navigationBarTitleText": "服务白名单设置",
+						"titleNView": {
+							"buttons":[
+								{
+									"text":"保存",
+									"fontSize":"20",
+									"width":"auto"
+								}
+							]
+						}
+					}
+				},
+				{
+					"path": "abute/feedback",
+					"style": {
+						"navigationBarTitleText": "问题反馈"
+					}
+				},
+				{
+					"path": "abute/feedBackList",
+					"style": {
+						"enablePullDownRefresh":true,
+						"navigationBarTitleText": "问题反馈列表",
+						"titleNView": false
+					}
+				},
+				{
+					"path": "abute/feedBackView",
+					"style": {
+						"navigationBarTitleText": "问题详情"
+					}
+				},
+				{
+					"path": "abute/feedBackEdit",
+					"style": {
+						"navigationBarTitleText": "问题反馈",
+						"titleNView": {
+							"buttons":[
+								{
+									"text":"保存",
+									"fontSize":"20",
+									"width":"auto"
+								}
+							]
+						}
+					}
+				}
+			]
+		},
+		{
+			"root": "powerapp/pages/flow",
+			"pages": [{
+					"path": "flowListMain",
+					"style": {
+						"navigationBarTitleText": "流程",
+						"titleNView": false,
+						"enablePullDownRefresh": true
+					}
+				},
+				{
+					"path": "qjsq/qjsqDetail",
+					"style": {
+						"navigationBarTitleText": "请假申请流程详情页面",
+						"titleNView": false
+					}
+				},
+				{
+					"path": "qjsq/action/qjsqEdit",
+					"style": {
+						"navigationBarTitleText": "修改申请信息",
+						"titleNView": false
+					}
+				},
+				{
+					"path": "sw/swDetail",
+					"style": {
+						"navigationBarTitleText": "收文流程详情页面",
+						"titleNView": false
+					}
+				},
+				{
+					"path": "sw/action/swEdit",
+					"style": {
+						"navigationBarTitleText": "修改收文信息",
+						"titleNView": false
+					}
+				},
+				{
+					"path": "flowManage/freeflow/transition",
+					"style": {
+						"navigationBarTitleText": "任务转交"
+					}
+				},
+				{
+					"path": "flowManage/freeflow/sendBack",
+					"style": {
+						"navigationBarTitleText": "任务退回"
+					}
+				},
+				{
+					"path": "flowManage/freeflow/finish",
+					"style": {
+						"navigationBarTitleText": "任务办结"
+					}
+				},
+				{
+					"path": "flowManage/common/selectUsers",
+					"style": {
+						"navigationBarTitleText": "人员选择",
+						"titleNView": false
+					}
+				},
+				{
+					"path": "flowManage/workflow/copyReader",
+					"style": {
+						"navigationBarTitleText": "任务抄送"
+					}
+				},
+				{
+					"path": "flowManage/workflow/counterSign",
+					"style": {
+						"navigationBarTitleText": "发起会签"
+					}
+				},
+				{
+					"path": "flowManage/workflow/endorse",
+					"style": {
+						"navigationBarTitleText": "任务加签"
+					}
+				},
+				{
+					"path": "flowManage/workflow/feedback",
+					"style": {
+						"navigationBarTitleText": "任务返回"
+					}
+				},
+				{
+					"path": "flowManage/workflow/finish",
+					"style": {
+						"navigationBarTitleText": "流程结束"
+					}
+				},
+				{
+					"path": "flowManage/workflow/jointProcess",
+					"style": {
+						"navigationBarTitleText": "发起会签"
+					}
+				},
+				{
+					"path": "flowManage/workflow/jointProcessFeedback",
+					"style": {
+						"navigationBarTitleText": "任务返回"
+					}
+				},
+				{
+					"path": "flowManage/workflow/jointProcessTransition",
+					"style": {
+						"navigationBarTitleText": "任务交办"
+					}
+				},
+				{
+					"path": "flowManage/workflow/reader",
+					"style": {
+						"navigationBarTitleText": "来文已阅"
+					}
+				},
+				{
+					"path": "flowManage/workflow/sendBack",
+					"style": {
+						"navigationBarTitleText": "任务退回"
+					}
+				},
+				{
+					"path": "flowManage/workflow/singleFinish",
+					"style": {
+						"navigationBarTitleText": "流程单步办结"
+					}
+				},
+				{
+					"path": "flowManage/workflow/transition",
+					"style": {
+						"navigationBarTitleText": "任务转交"
+					}
+				},
+				{
+					"path": "flowManage/workflow/turnDeal",
+					"style": {
+						"navigationBarTitleText": "任务转办"
+					}
+				},
+				{
+					"path": "task/gzTaskList",
+					"style": {
+						"navigationBarTitleText": "关注任务"
+					}
+				},
+				{
+					"path": "qjsq/qjsqQueryList",
+					"style": {
+						"navigationBarTitleText": "请假查询"
+					}
+				},
+				{
+					"path": "sw/swQueryList",
+					"style": {
+						"navigationBarTitleText": "收文查询"
+					}
+				},
+				{
+					"path": "task/startTaskList",
+					"style": {
+						"navigationBarTitleText": "任务发起"
+					}
+				},
+				{
+					"path": "qjsq/qjsqStart",
+					"style": {
+						"navigationBarTitleText": "请假申请信息",
+						"titleNView": false
+					}
+				},
+				{
+					"path": "sw/swStart",
+					"style": {
+						"navigationBarTitleText": "收文发起",
+						"titleNView": false
+					}
+				},
+				{
+					"path": "flowManage/common/kjyjManage",
+					"style": {
+						"navigationBarTitleText": "快捷语句管理",
+						"titleNView": false
+					}
+				}
+			]
+		},
+		{
+			"root": "powerapp/pages/index", //配置首页跳转路由
+			"pages": [{
+				"path": "tabList/tabList",
+				"style": {
+					"navigationBarTitleText": "选项卡列表"
+				}
+			}, {
+				"path": "dbrw/flowListMain",
+				"style": {
+					"navigationBarTitleText": "待办任务"
+				}
+			}, {
+				"path": "personList/personList",
+				"style": {
+					"navigationBarTitleText": "人员列表",
+					"titleNView": false, //隐藏配置导航 设置app
+					"navigationStyle": "custom",
+					"enablePullDownRefresh": true
+				}
+			}, {
+				"path": "personList/personDail/personDail",
+				"style": {
+					"navigationBarTitleText": "人员详情"
+				}
+			}, {
+				"path": "personList/personEdit/personEdit",
+				"style": {
+					"navigationBarTitleText": "人员编辑",
+					"titleNView": false, //隐藏配置导航
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "selectionExample/selectionExample",
+				"style": {
+					"navigationBarTitleText": "选择示例"
+				}
+			}, {
+				"path": "selectionExample/selectDail/singleUser",
+				"style": {
+					"navigationBarTitleText": "单选人员",
+					"titleNView": false //隐藏配置导航
+				}
+			}, {
+				"path": "selectionExample/selectDail/multiUser",
+				"style": {
+					"navigationBarTitleText": "多选人员",
+					"titleNView": false, //隐藏配置导航
+					"navigationStyle": "custom"
+				}
+			}, {
+				"path": "selectionExample/selectDail/singleDept",
+				"style": {
+					"navigationBarTitleText": "单选部门",
+					"titleNView": false //隐藏配置导航
+				}
+			}, {
+				"path": "selectionExample/selectDail/multiDept",
+				"style": {
+					"navigationBarTitleText": "多选部门",
+					"titleNView": false //隐藏配置导航
+				}
+			}, {
+				"path": "selectionExample/selectDail/singleWry",
+				"style": {
+					"navigationBarTitleText": "单选污染源",
+					"titleNView": false //隐藏配置导航
+				}
+			}, {
+				"path": "sideslipEm/sideslipEm",
+				"style": {
+					"navigationBarTitleText": "侧滑示例",
+					"app-plus": {
+						"titleNView": {
+							"buttons": [{
+								"text": "\ue563",
+								"fontSrc": "/static/uni.ttf",
+								"fontSize": "22px"
+							}]
+						}
+					}
+				}
+			}, {
+				"path": "echartCount/echartCount",
+				"style": {
+					"navigationBarTitleText": "图形统计"
+				}
+			}, {
+				"path": "shareEmp/shareEmp",
+				"style": {
+					"navigationBarTitleText": "分享示例"
+				}
+			}, {
+				"path": "scan/scan",
+				"style": {
+					"navigationBarTitleText": "扫一扫"
+				}
+			}, {
+				"path": "messagePush/messagePush",
+				"style": {
+					  
+				}
+			}, {
+				"path": "mapPointEmp/mapPointEmp",
+				"style": {
+					"navigationBarTitleText": "地图点位示例",
+					"app-plus": {
+						"titleNView": {
+							"buttons": [{
+								"id":"dw",
+								"text": "\ue649",
+								"fontSrc": "/static/powerapp/font/iconfont.ttf",
+								"fontSize": "22px",
+								"color": "#ffffff"
+							}]
+						}
+					}
+				}
+			}, {
+				"path": "mapSearchEmp/mapSearchEmp",
+				"style": {
+					"navigationBarTitleText": "地图搜索示例"
+				}
+			}, {
+				"path": "pictureCarousel/pictureCarousel",
+				"style": {
+					"navigationBarTitleText": "图片轮播"
+				}
+		  	}, {
+				"path": "pictureView/pictureView",
+				"style": {
+					"navigationBarTitleText": "图片查看"
+				}
+			},{
+				"path": "webLink/baidu",
+				"style":{
+					"navigationBarTitleText":"百度"
+				}
+			},{
+				"path": "webLink/sina",
+				"style":{
+					"navigationBarTitleText":"新浪"
+				}
+			},{
+				"path": "webLink/hbb",
+				"style":{
+					"navigationBarTitleText":"中华人民共和国生态环境部"
+				}
+			},{
+				"path": "webLink/chinaWheather",
+				"style":{
+					"navigationBarTitleText":"中国天气"
+				}
+			},{
+				"path": "addFile/addFile",
+				"style":{
+					"navigationBarTitleText":"首页应用定制",
+					"titleNView": false //隐藏配置导航
+				}
+			}
+			]
+		}
+	],
+	"globalStyle": {
+		"navigationBarTextStyle": "white",
+		"navigationBarTitleText": "Hello uniapp",
+		"navigationBarBackgroundColor": "#17bdcc",
+		"backgroundColor": "#17bdcc",
+		"mp-alipay": {
+			"titleBarColor": "#FFFFFF"
+		}
+	},
+	"tabBar": {
+		"color": "#818181",
+		"selectedColor": "#17bdcc",
+		"borderStyle": "black",
+		"backgroundColor": "#F8F8F8",
+		"list": [{
+				"pagePath": "powerapp/pages/tabBar/index/index",
+				"iconPath": "static/powerapp/tabbar/icon_line_home.png",
+				"selectedIconPath": "static/powerapp/tabbar/icon_full_home.png",
+				"text": "首页"
+			},
+			{
+				"pagePath": "powerapp/pages/tabBar/contact/main",
+				"iconPath": "static/powerapp/tabbar/icon_line_phone.png",
+				"selectedIconPath": "static/powerapp/tabbar/icon_full_phone.png",
+				"text": "通讯录"
+			},
+			{
+				"pagePath": "pages/tabBar/API/index",
+				"iconPath": "static/powerapp/tabbar/icon_line_work.png",
+				"selectedIconPath": "static/powerapp/tabbar/icon_full_work.png",
+				"text": "示例"
+			},
+			{
+				"pagePath": "powerapp/pages/tabBar/user/user",
+				"iconPath": "static/powerapp/tabbar/icon_line_mine.png",
+				"selectedIconPath": "static/powerapp/tabbar/icon_full_mine.png",
+				"text": "我的"
+			}
+		]
+	},
+	"condition" : { //模式配置，仅开发期间生效
+		"current": 0, //当前激活的模式(list 的索引项)
+		"list": [
+			{
+				"name": "", //模式名称
+				"path": "", //启动页面，必选
+				"query": "" //启动参数，在页面的onLoad函数里面得到
+			}
+		]
+	}
+}

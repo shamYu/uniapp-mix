@@ -1,0 +1,120 @@
+$type:'px';
+@function pxOrUpx($val,$type){
+	@if $type == 'upx'{
+		@return ($val / 1px) * 2 * 1upx;
+	}@else if $type == 'px'{
+		@return $val;
+	}
+}
+// 使用 pxOrUpx(2px,$type)
+.map-container{
+	width:100%;
+	height:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	z-index:1;
+}
+.custom-info-win{
+	box-shadow: 0 pxOrUpx(1px,$type) pxOrUpx(2px,$type) rgba(0,0,0,0.1);
+    background: none repeat scroll 0 0 white;
+    border-radius: pxOrUpx(2px,$type);
+    text-align: left;
+	background-color:#fff;
+	padding:pxOrUpx(4px,$type) pxOrUpx(5px,$type);
+	position:relative;
+	border:pxOrUpx(1px,$type) solid #ddd;
+	&:hover,&.active{
+		box-shadow: 0 pxOrUpx(3px,$type) pxOrUpx(2px,$type) rgba(0,0,0,0.3);
+		&:after{
+			bottom:-#{pxOrUpx(10px,$type)}
+		}
+	}
+}
+.custom-info-win:before,.custom-info-win:after{
+	position:absolute;
+	bottom: 0;
+	left: 50%;
+	content:'';
+}
+$arrow-wh:pxOrUpx(8px,$type);
+.custom-info-win:before{
+    margin-left: -#{$arrow-wh};
+	bottom: -#{pxOrUpx(7px,$type)};
+    border-left: $arrow-wh solid transparent;
+    border-right: $arrow-wh solid transparent;
+    border-top: $arrow-wh solid #fff;
+}
+.custom-info-win:after{
+    content: "";
+    margin-left: -#{$arrow-wh};
+    bottom: -#{$arrow-wh};
+    border-left: $arrow-wh solid transparent;
+    border-right: $arrow-wh solid transparent;
+    border-top: $arrow-wh solid rgba(0,0,0,0.3);
+    filter: blur(#{pxOrUpx(1px,$type)});
+    z-index: -1;
+}
+.map-icon-box{
+	position: absolute;
+	width:50%;
+	height:pxOrUpx(60px,$type);
+	z-index: 200;
+	top:0;
+	left:0;
+	.icon{
+		display:inline-block;
+		width: pxOrUpx(40px,$type);
+		height:pxOrUpx(40px,$type);
+		margin: pxOrUpx(10px,$type) pxOrUpx(15px,$type);
+		&:nth-child(n+2){
+			margin-left:0;
+		}
+	}
+}
+.map-input{
+	position:absolute;
+	top:pxOrUpx(10px,$type);
+	left:50%;
+	transform: translate(-50%,0);
+	z-index:2009;
+	width:86%;
+	padding:0 pxOrUpx(15px,$type);
+	box-sizing: border-box;
+	$wh:pxOrUpx(36px,$type);
+	height:$wh;
+	display:flex;
+	background: rgba(#aaa,.8);
+	border-radius: $wh;
+	color:#fff;
+	font-size:pxOrUpx(14px,$type);
+	&::-webkit-input-placeholder{
+	  color: #fff;
+	}
+	&::-moz-placeholder{
+	  color: #fff;
+	}
+	&:-ms-input-placeholder{
+	  color: #fff;
+	}
+	&>div{
+		width: 100%;
+	}
+	*{
+		color:#fff;
+		background: transparent;
+	}
+}
+.panel-result{
+	position: fixed;
+	background-color: white;
+	max-height: 50%;
+	overflow-y: auto;
+	bottom:0;
+	left:0;
+	right:0;
+	border-top: pxOrUpx(1px,$type) solid #ddd;
+	z-index:2019;
+}

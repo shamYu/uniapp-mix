@@ -1,0 +1,170 @@
+{
+    "name" : "platform-module-mixapp",
+    "appid" : "__UNI__BB6C718",
+    "description" : "标准开发框架",
+    "versionName" : "1.0.0",
+    "versionCode" : 100,
+    "transformPx" : "false",
+    /* 5+App特有相关 */
+    "app-plus" : {
+        "modules" : {
+            "OAuth" : {},
+            "Payment" : {},
+            "Push" : {},
+            "Share" : {},
+            "Speech" : {},
+            "VideoPlayer" : {},
+            "Messaging" : {},
+            "Contacts" : {},
+            "Maps" : {}
+        },
+        /* 应用发布信息 */
+        "distribute" : {
+            /* android打包配置 */
+            "android" : {
+                "theme" : "#17bdcc",
+                "permissions" : [
+                    "<uses-feature android:name=\"android.hardware.camera\"/>",
+                    "<uses-feature android:name=\"android.hardware.camera.autofocus\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_COARSE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_FINE_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_MOCK_LOCATION\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.ACCESS_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CALL_PHONE\"/>",
+                    "<uses-permission android:name=\"android.permission.CAMERA\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_NETWORK_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.CHANGE_WIFI_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.FLASHLIGHT\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_ACCOUNTS\"/>",
+                    "<uses-permission android:name=\"android.permission.GET_TASKS\"/>",
+                    "<uses-permission android:name=\"android.permission.INTERNET\"/>",
+                    "<uses-permission android:name=\"android.permission.MODIFY_AUDIO_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.MOUNT_UNMOUNT_FILESYSTEMS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_LOGS\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_PHONE_STATE\"/>",
+                    "<uses-permission android:name=\"android.permission.READ_SMS\"/>",
+                    "<uses-permission android:name=\"android.permission.RECEIVE_BOOT_COMPLETED\"/>",
+                    "<uses-permission android:name=\"android.permission.RECORD_AUDIO\"/>",
+                    "<uses-permission android:name=\"android.permission.SEND_SMS\"/>",
+                    "<uses-permission android:name=\"android.permission.SYSTEM_ALERT_WINDOW\"/>",
+                    "<uses-permission android:name=\"android.permission.VIBRATE\"/>",
+                    "<uses-permission android:name=\"android.permission.WAKE_LOCK\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_CONTACTS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_EXTERNAL_STORAGE\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SETTINGS\"/>",
+                    "<uses-permission android:name=\"android.permission.WRITE_SMS\"/>",
+                    "<uses-permission android:name=\"android.permission.RECEIVE_USER_PRESENT\"/>"
+                ]
+            },
+            /* ios打包配置 */
+            "ios" : {
+                "UIBackgroundModes" : [ "audio" ]
+            },
+            /* SDK配置 */
+            "sdkConfigs" : {
+                "speech" : {
+                    "ifly" : {}
+                },
+                "maps" : {
+                    "amap" : {
+                        "appkey_ios" : "93d15f2caa3f93a8f2289d262b0cfc60",
+                        "appkey_android" : "93d15f2caa3f93a8f2289d262b0cfc60"
+                    }
+                }
+            },
+            "orientation" : [ "portrait-primary" ],
+            "splashscreen" : {
+                "ios" : {
+                    "iphone" : {
+                        "retina35" : "static/powerapp/manifest/splash.png",
+                        "retina40" : "static/powerapp/manifest/splash.png",
+                        "retina40l" : "",
+                        "retina47" : "static/powerapp/manifest/splash.png",
+                        "retina47l" : "",
+                        "retina55" : "static/powerapp/manifest/splash.png",
+                        "iphonex" : "static/powerapp/manifest/splash.png",
+                        "portrait-896h@2x" : ""
+                    },
+                    "ipad" : {
+                        "portrait7" : "static/powerapp/manifest/splash.png",
+                        "portrait-retina7" : "static/powerapp/manifest/splash.png",
+                        "landscape-retina7" : "static/powerapp/manifest/splash.png",
+                        "portrait-1112h@2x" : "static/powerapp/manifest/splash.png",
+                        "portrait-1194h@2" : "static/powerapp/manifest/splash.png",
+                        "portrait-1366h@2x" : "static/powerapp/manifest/splash.png"
+                    }
+                },
+                "android" : {
+                    "hdpi" : "static/powerapp/manifest/splash.png",
+                    "xhdpi" : "static/powerapp/manifest/splash.png",
+                    "xxhdpi" : "static/powerapp/manifest/splash.png"
+                }
+            },
+            "icons" : {
+                "ios" : {
+                    "appstore" : "static/powerapp/manifest/1024x1024.png",
+                    "ipad" : {
+                        "app" : "unpackage/res/icons/76x76.png",
+                        "app@2x" : "unpackage/res/icons/152x152.png",
+                        "notification" : "unpackage/res/icons/20x20.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "proapp@2x" : "unpackage/res/icons/167x167.png",
+                        "settings" : "unpackage/res/icons/29x29.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "spotlight" : "unpackage/res/icons/40x40.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png"
+                    },
+                    "iphone" : {
+                        "app@2x" : "unpackage/res/icons/120x120.png",
+                        "app@3x" : "unpackage/res/icons/180x180.png",
+                        "notification@2x" : "unpackage/res/icons/40x40.png",
+                        "notification@3x" : "unpackage/res/icons/60x60.png",
+                        "settings@2x" : "unpackage/res/icons/58x58.png",
+                        "settings@3x" : "unpackage/res/icons/87x87.png",
+                        "spotlight@2x" : "unpackage/res/icons/80x80.png",
+                        "spotlight@3x" : "unpackage/res/icons/120x120.png"
+                    }
+                },
+                "android" : {
+                    "hdpi" : "unpackage/res/icons/72x72.png",
+                    "ldpi" : "unpackage/res/icons/48x48.png",
+                    "mdpi" : "unpackage/res/icons/48x48.png",
+                    "xhdpi" : "unpackage/res/icons/96x96.png",
+                    "xxhdpi" : "unpackage/res/icons/144x144.png",
+                    "xxxhdpi" : "unpackage/res/icons/192x192.png"
+                }
+            }
+        }
+    },
+    /* 快应用特有相关 */
+    "quickapp" : {},
+    /* 小程序特有相关 */
+    "mp-weixin" : {
+        "appid" : "wxec66d8b2cc88ed84",
+        "setting" : {
+            "urlCheck" : false,
+            "es6" : true,
+            "minified" : true,
+            "postcss" : true
+        },
+        "permission" : {
+            "scope.userLocation" : {
+                "desc" : "需要请求地址位置信息"
+            }
+        }
+    },
+    "h5" : {
+        "template" : "index.html",
+        "router" : {
+            "mode" : "history",
+            "base" : "/pure4/h5/"
+        }
+    },
+    /*框架新增-------------------------------------add*/
+    "networkTimeout" : {
+        "request" : 15000, // 15秒 
+        "uploadFile" : 60000 // 60秒
+    }
+}

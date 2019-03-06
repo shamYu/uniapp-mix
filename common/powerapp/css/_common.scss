@@ -1,0 +1,162 @@
+/* 公用的常见样式
+* @author 李凤
+* @date 20190115
+*/
+html,body{
+	@include width-height;
+}
+body{
+	font-family:sans-serif,'Helvetica Neue',Helvetica;;
+	color:$pd-color;
+}
+body,view{
+	font-size:$pd-font-size-smaller;
+}
+// placeholder颜色
+.input-placeholder{color:$pd-placeholder-color;}
+// 选中文本的颜色
+::-moz-selection, ::-webkit-keygen-select, ::selection{
+  background-color: #6998ff;
+  color: #fff; }
+// 字体大小
+.uni-text-smaller{
+	font-size:$pd-font-size-smaller;
+}
+.uni-text-small {
+	font-size:$pd-font-size-small;
+}
+.uni-text-middle{
+	font-size:$pd-font-size-middle;
+}
+.uni-text-big{
+	font-size:$pd-font-size-big;
+}
+// 文字布局
+.uni-text-left{
+	text-align: left;
+}
+.uni-text-right{
+	text-align: right;
+}
+// 字体颜色
+.uni-text-primary{
+	color:$pd-color-primary;
+}
+.uni-text-gray{
+	color: $pd-color-gray;
+}
+.uni-text-success{
+	color: $pd-color-gray;
+}
+.uni-text-error{
+	color: $pd-color-gray;
+}
+.uni-text-warning{
+	color: $pd-color-gray;
+}
+/* 背景色 */
+.uni-bg-white{background-color:#fff;}
+.uni-bg-red{
+	background:#F76260; color:#FFF;
+}
+.uni-bg-green{
+	background:#09BB07; color:#FFF;
+}
+.uni-bg-blue{
+	background:$pd-color-primary; color:#FFF;
+}
+// 链接样式
+.uni-link{
+	color:#576B95;
+	font-size:26upx;
+}
+
+/* 标题 */
+.uni-h1 {font-size: 80upx; font-weight:700;}
+.uni-h2 {font-size: 60upx; font-weight:700;}
+.uni-h3 {font-size: 48upx; font-weight:700;}
+.uni-h4 {font-size: 36upx; font-weight:700;}
+.uni-h5 {font-size: 28upx; color: #8f8f94;}
+.uni-h6 {font-size: 24upx; color: #8f8f94;}
+.uni-bold{font-weight:bold;}
+/* 文本溢出隐藏 */
+.uni-ellipsis {@include single-overflow;}
+.uni-multiple-ellipsis {@include multiple-overflow;}
+ul,ol,.ul-reset{@include list-reset;}
+.mt0{
+	margin-top:0;
+}
+.iconfont{
+	font-size:38upx;
+}
+// uni-app的重置样式
+uni-page-head{
+	.uni-page-head{
+		background-color: #{$pd-color-primary} !important;
+	}
+	.uni-page-head__title{
+		font-weight: 500;
+	}
+}
+//弹窗
+.pd-swiper-dots-box{
+	line-height: 1;
+}
+.guide-swiper{
+	.pd-swiper-dots-box{
+		line-height: 1.8;
+	}
+}
+
+// .uni-modal .uni-modal__btn_primary{
+// 	color: #{$pd-color-primary} !important;
+// }
+// uni-picker .uni-picker-action.uni-picker-action-confirm{
+// 	color: #{$pd-color-primary} !important;
+// 	}
+// 	.uni-tab-bar .active{
+// 		color:$pd-color-primary;
+// 		}
+
+// 顶部样式
+.unb-icon-list{
+	display:flex;
+	justify-content: center;
+	align-items: center;
+}
+// 顶部切换
+.tabs-btn {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: center;
+		width:240upx;
+		height:52upx;
+		margin-left:auto;
+		margin-right:auto;
+		border: 2upx solid white;
+		border-radius: 12upx;
+		overflow: hidden;
+	}
+	.tab-bt{
+		flex:1;
+		height:52upx;
+		line-height: 52upx;
+		font-size:$pd-font-size-smaller;
+		background-color:$pd-color-primary;
+		color:#fff;
+		border-radius: 0;
+		&:after{
+			display:none;
+		}
+	}
+	.tab-bt.on {
+		transition: .5s all ease;
+		background: white;
+		color: $pd-color-primary;
+	}
+	.login-content{
+		.input-placeholder{
+			color: #e7e7e7;
+		}
+	}
