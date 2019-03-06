@@ -21,4 +21,4 @@
 ### pages.json：用来对 uni-app 进行全局配置，决定页面文件的路径、窗口表现、设置多 tab
 ### 
 ### manifest.json：是应用的配置文件，用于指定应用的名称、图标、权限等。
-### 
+### 开发文档 http://note.youdao.com/noteshare?id=7cc8e42498ea27b98ce2cf7f8aabcc15
